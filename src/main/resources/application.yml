@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: prod #default
+    group:
+      local:
+        - common
+      prod :
+        - common
+---
+spring:
+  config:
+    activate:
+      on-profile: common
+
+#공통으로 설정할 common profile
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
