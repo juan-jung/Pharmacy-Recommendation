@@ -1,6 +1,7 @@
 package com.example.project.api.service;
 
 import com.example.project.api.dto.KakaoApiResponseDto;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,8 +32,8 @@ public class KakaoAddressSearchService {
         URI uri = kakaoUriBuilderService.buildUriByAddressSearch(address);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set(HttpHeaders.AUTHORIZATION, "kakaoAK "+kakaoRestApiKey);
-        HttpEntity httpEntity = new HttpEntity(headers);
+        headers.set(HttpHeaders.AUTHORIZATION, "KakaoAK "+kakaoRestApiKey);
+        HttpEntity httpEntity = new HttpEntity<>(headers);
 
         //kakao api 호출
         return restTemplate.exchange(uri, HttpMethod.GET, httpEntity, KakaoApiResponseDto.class).getBody();
