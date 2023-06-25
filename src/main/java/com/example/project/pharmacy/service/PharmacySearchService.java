@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class PharamcySearchService {
+public class PharmacySearchService {
 
     private final PharmacyRepositoryService pharmacyRepositoryService;
 
