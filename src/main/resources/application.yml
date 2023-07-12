@@ -11,10 +11,11 @@ spring:
   config:
     activate:
       on-profile: common
-  kakao:
-    rest:
-      api:
-        key: ${KAKAO_REST_API_KEY} #실무에서는 local과 prod에서 사용되는 키 구분 : 사용횟수 등 관리
+
+kakao:
+  rest:
+    api:
+      key: ${KAKAO_REST_API_KEY} #실무에서는 local과 prod에서 사용되는 키 구분 : 사용횟수 등 관리
 
 #공통으로 설정할 common profile
 

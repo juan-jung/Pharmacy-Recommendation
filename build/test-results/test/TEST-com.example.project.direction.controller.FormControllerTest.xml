@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.direction.controller.FormControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-12T14:00:15" hostname="LAPTOP-PV547CLP" time="0.188">
+  <properties/>
+  <testcase name="GET /" classname="com.example.project.direction.controller.FormControllerTest" time="0.062"/>
+  <testcase name="POST /search" classname="com.example.project.direction.controller.FormControllerTest" time="0.125"/>
+  <system-out><![CDATA[2023-07-12 23:00:15.510  INFO 35556 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-07-12 23:00:15.510  INFO 35556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-12 23:00:15.511  INFO 35556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-07-12 23:00:15.585  INFO 35556 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-07-12 23:00:15.585  INFO 35556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-12 23:00:15.586  INFO 35556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /search
+       Parameters = {address=[서울 성북구 종암동]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.project.direction.controller.FormController
+           Method = com.example.project.direction.controller.FormController#postDirection(InputDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = output
+             View = null
+        Attribute = inputDto
+            value = com.example.project.direction.dto.InputDto@7aab77f
+           errors = []
+        Attribute = outputFormList
+            value = [com.example.project.direction.dto.OutputDto@788b0c96, com.example.project.direction.dto.OutputDto@45dac901]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Language:"en"]
+     Content type = null
+             Body = 
+    Forwarded URL = output
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

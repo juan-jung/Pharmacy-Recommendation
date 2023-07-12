@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.pharmacy.repository.PharmacyRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-12T14:00:15" hostname="LAPTOP-PV547CLP" time="0.717">
+  <properties/>
+  <testcase name="PharmacyRepository save" classname="com.example.project.pharmacy.repository.PharmacyRepositoryTest" time="0.588"/>
+  <testcase name="PharmacyRepository saveAll" classname="com.example.project.pharmacy.repository.PharmacyRepositoryTest" time="0.083"/>
+  <testcase name="BaseTimeEntity 등록" classname="com.example.project.pharmacy.repository.PharmacyRepositoryTest" time="0.043"/>
+  <system-out><![CDATA[Hibernate: select pharmacy0_.id as id1_1_, pharmacy0_.created_date as created_2_1_, pharmacy0_.modified_date as modified3_1_, pharmacy0_.latitude as latitude4_1_, pharmacy0_.longitude as longitud5_1_, pharmacy0_.pharmacy_address as pharmacy6_1_, pharmacy0_.pharmacy_name as pharmacy7_1_ from pharmacy pharmacy0_
+Hibernate: insert into pharmacy (created_date, modified_date, latitude, longitude, pharmacy_address, pharmacy_name) values (?, ?, ?, ?, ?, ?)
+Hibernate: select pharmacy0_.id as id1_1_, pharmacy0_.created_date as created_2_1_, pharmacy0_.modified_date as modified3_1_, pharmacy0_.latitude as latitude4_1_, pharmacy0_.longitude as longitud5_1_, pharmacy0_.pharmacy_address as pharmacy6_1_, pharmacy0_.pharmacy_name as pharmacy7_1_ from pharmacy pharmacy0_
+Hibernate: delete from pharmacy where id=?
+Hibernate: insert into pharmacy (created_date, modified_date, latitude, longitude, pharmacy_address, pharmacy_name) values (?, ?, ?, ?, ?, ?)
+Hibernate: select pharmacy0_.id as id1_1_, pharmacy0_.created_date as created_2_1_, pharmacy0_.modified_date as modified3_1_, pharmacy0_.latitude as latitude4_1_, pharmacy0_.longitude as longitud5_1_, pharmacy0_.pharmacy_address as pharmacy6_1_, pharmacy0_.pharmacy_name as pharmacy7_1_ from pharmacy pharmacy0_
+Hibernate: select pharmacy0_.id as id1_1_, pharmacy0_.created_date as created_2_1_, pharmacy0_.modified_date as modified3_1_, pharmacy0_.latitude as latitude4_1_, pharmacy0_.longitude as longitud5_1_, pharmacy0_.pharmacy_address as pharmacy6_1_, pharmacy0_.pharmacy_name as pharmacy7_1_ from pharmacy pharmacy0_
+Hibernate: delete from pharmacy where id=?
+Hibernate: insert into pharmacy (created_date, modified_date, latitude, longitude, pharmacy_address, pharmacy_name) values (?, ?, ?, ?, ?, ?)
+Hibernate: select pharmacy0_.id as id1_1_, pharmacy0_.created_date as created_2_1_, pharmacy0_.modified_date as modified3_1_, pharmacy0_.latitude as latitude4_1_, pharmacy0_.longitude as longitud5_1_, pharmacy0_.pharmacy_address as pharmacy6_1_, pharmacy0_.pharmacy_name as pharmacy7_1_ from pharmacy pharmacy0_
+Pharmacy(id=3, pharmacyName=은혜 약국, pharmacyAddress=서울 특별시 성북구 종암동, latitude=0.0, longitude=0.0)]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:mariadb:10:///
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+kakao:
+  rest:
+    api:
+      key: 0d0318f028971bea3743a6a5c9bfc471
+
+pharmacy:
+  recommendation:
+    base:
+      url: http://localhost:8080/dir/
