@@ -5,6 +5,7 @@ import com.example.project.api.service.KakaoCategorySearchService;
 import com.example.project.direction.entity.Direction;
 import com.example.project.direction.repository.DirectionRepository;
 import com.example.project.pharmacy.service.PharmacySearchService;
+import io.seruco.encoding.base62.Base62;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -29,10 +30,17 @@ public class DirectionService {
 
     private final KakaoCategorySearchService kakaoCategorySearchService;
 
+    private final Base62Service base62Service;
+
     @Transactional
     public List<Direction> saveAll(List<Direction> directionList){
         if(CollectionUtils.isEmpty(directionList)) return Collections.emptyList();
         return directionRepository.saveAll(directionList);
+    }
+
+    public Direction findById(String encodedId) {
+        Long decodedId = base62Service.decodeDirectionId(encodedId);
+        return directionRepository.findById(decodedId).orElse(null);
     }
 
     public List<Direction> buildDirectionList(DocumentDto documentDto) {
