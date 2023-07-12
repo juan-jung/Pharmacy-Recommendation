@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PharmacyDto {
     private Long id;
-
     private String pharmacyName;
     private String pharmacyAddress;
     private double latitude;
