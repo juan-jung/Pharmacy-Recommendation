@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.pharmacy.cache.RedisTemplateTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-08-01T15:08:49" hostname="LAPTOP-PV547CLP" time="1.479">
+  <properties/>
+  <testcase name="RedisTemplate String Operations" classname="com.example.project.pharmacy.cache.RedisTemplateTest" time="1.418"/>
+  <testcase name="RedisTemplate set operations" classname="com.example.project.pharmacy.cache.RedisTemplateTest" time="0.027"/>
+  <testcase name="RedisTemplate hash operations" classname="com.example.project.pharmacy.cache.RedisTemplateTest" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

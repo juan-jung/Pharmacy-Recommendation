@@ -28,7 +28,7 @@ public class PharmacySearchService {
         return pharmacyRepositoryService.findAll()
                 .stream()
                 .map(entity -> convertToPharmacyDto(entity))
-                //.map(this::convertToPharmacyDto)
+//                .map(this::convertToPharmacyDto)
                 .collect(Collectors.toList());
     }
 

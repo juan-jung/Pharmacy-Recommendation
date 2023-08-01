@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.api.service.KakaoUriBuilderServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-12T14:00:15" hostname="LAPTOP-PV547CLP" time="0.01">
+<testsuite name="com.example.project.api.service.KakaoUriBuilderServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-01T15:08:48" hostname="LAPTOP-PV547CLP" time="0.009">
   <properties/>
-  <testcase name="buildUriAddressSearch - 한글 파라미터의 경우 정상적으로 인코딩" classname="com.example.project.api.service.KakaoUriBuilderServiceTest" time="0.01"/>
-  <system-out><![CDATA[2023-07-12 23:00:15.168  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC
+  <testcase name="buildUriAddressSearch - 한글 파라미터의 경우 정상적으로 인코딩" classname="com.example.project.api.service.KakaoUriBuilderServiceTest" time="0.009"/>
+  <system-out><![CDATA[2023-08-02 00:08:48.605  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

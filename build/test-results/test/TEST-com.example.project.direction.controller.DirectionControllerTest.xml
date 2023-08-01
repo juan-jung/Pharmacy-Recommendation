@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.direction.controller.DirectionControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-12T14:00:15" hostname="LAPTOP-PV547CLP" time="0.227">
+<testsuite name="com.example.project.direction.controller.DirectionControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-01T15:08:48" hostname="LAPTOP-PV547CLP" time="0.177">
   <properties/>
-  <testcase name="GET /dir/{encodedId}" classname="com.example.project.direction.controller.DirectionControllerTest" time="0.227"/>
-  <system-out><![CDATA[2023-07-12 23:00:15.305  INFO 35556 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2023-07-12 23:00:15.306  INFO 35556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-12 23:00:15.306  INFO 35556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2023-07-12 23:00:15.383  INFO 35556 --- [    Test worker] c.e.p.d.controller.DirectionController   : [DirectionController searchDirection] direction url : https://map.kakao.com/link/map/pharmacy,38.11,128.11
+  <testcase name="GET /dir/{encodedId}" classname="com.example.project.direction.controller.DirectionControllerTest" time="0.177"/>
+  <system-out><![CDATA[2023-08-02 00:08:48.714  INFO 20704 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-08-02 00:08:48.714  INFO 20704 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-02 00:08:48.715  INFO 20704 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-08-02 00:08:48.779  INFO 20704 --- [    Test worker] c.e.p.d.controller.DirectionController   : [DirectionController searchDirection] direction url : https://map.kakao.com/link/map/pharmacy,38.11,128.11
 
 MockHttpServletRequest:
       HTTP Method = GET

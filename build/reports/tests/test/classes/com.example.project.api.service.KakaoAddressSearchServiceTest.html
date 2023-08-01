@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.677s</div>
+<div class="counter">1.627s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,47 +79,47 @@
 </thead>
 <tr>
 <td class="success">address 파라미터 값이 null이면, requestAddressSearch 메소드는 null을 리턴한다</td>
-<td class="success">0.006s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: , expectedResult: false, #6]</td>
-<td class="success">0.006s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: 광진구 구의동 251-45, expectedResult: true, #4]</td>
-<td class="success">0.028s</td>
+<td class="success">0.036s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: 광진구 구의동 251-455555, expectedResult: false, #5]</td>
-<td class="success">0.023s</td>
+<td class="success">0.035s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: 서울 대학로, expectedResult: true, #2]</td>
-<td class="success">0.037s</td>
+<td class="success">0.051s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: 서울 성북구 종암동 91, expectedResult: true, #1]</td>
-<td class="success">0.031s</td>
+<td class="success">0.056s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: 서울 성북구 종암동 잘못된 주소, expectedResult: false, #3]</td>
-<td class="success">0.028s</td>
+<td class="success">0.033s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환된다. [inputAddress: 서울 특별시 성북구 종암동, expectedResult: true, #0]</td>
-<td class="success">0.034s</td>
+<td class="success">0.040s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">주소값이 valid하다면, requestAddressSearch 메소드는 정상적으로 document를 반환한다</td>
-<td class="success">0.484s</td>
+<td class="success">1.364s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -136,43 +136,43 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.7)
 
-2023-07-12 23:00:11.930  INFO 35556 --- [    Test worker] c.e.p.a.s.KakaoAddressSearchServiceTest  : Starting KakaoAddressSearchServiceTest using Java 11.0.16.1 on LAPTOP-PV547CLP with PID 35556 (started by crumb in C:\Projects\Pharmacy-Recommandation\project)
-2023-07-12 23:00:11.930  INFO 35556 --- [    Test worker] c.e.p.a.s.KakaoAddressSearchServiceTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-07-12 23:00:12.352  INFO 35556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-07-12 23:00:12.352  INFO 35556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-12 23:00:12.416  INFO 35556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
-2023-07-12 23:00:12.421  INFO 35556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-07-12 23:00:12.421  INFO 35556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-07-12 23:00:12.448  INFO 35556 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.project.direction.repository.DirectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-2023-07-12 23:00:12.448  INFO 35556 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.project.pharmacy.repository.PharmacyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-2023-07-12 23:00:12.448  INFO 35556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-2023-07-12 23:00:12.649  INFO 35556 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsHelpersAutoConfiguration' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsHelpersAutoConfiguration$$EnhancerBySpringCGLIB$$48625513] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-07-12 23:00:12.672  INFO 35556 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'handlebars.resolver-pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsValueResolversProperties' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsValueResolversProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-07-12 23:00:12.678  INFO 35556 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'handlebars-pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsProperties' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-07-12 23:00:12.679  INFO 35556 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsAutoConfiguration$HandlebarsViewResolverConfiguration' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsAutoConfiguration$HandlebarsViewResolverConfiguration$$EnhancerBySpringCGLIB$$5b497fb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-07-12 23:00:12.693  INFO 35556 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'handlebarsViewResolver' of type [com.github.jknack.handlebars.springmvc.HandlebarsViewResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-07-12 23:00:12.838  INFO 35556 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-12 23:00:12.863  INFO 35556 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2023-07-12 23:00:12.882  INFO 35556 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2023-07-12 23:00:12.882  INFO 35556 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2023-08-02 00:08:45.152  INFO 20704 --- [    Test worker] c.e.p.a.s.KakaoAddressSearchServiceTest  : Starting KakaoAddressSearchServiceTest using Java 11.0.16.1 on LAPTOP-PV547CLP with PID 20704 (started by crumb in C:\Projects\Pharmacy-Recommandation\project)
+2023-08-02 00:08:45.152  INFO 20704 --- [    Test worker] c.e.p.a.s.KakaoAddressSearchServiceTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-02 00:08:45.466  INFO 20704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-02 00:08:45.466  INFO 20704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-02 00:08:45.517  INFO 20704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2023-08-02 00:08:45.519  INFO 20704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-02 00:08:45.519  INFO 20704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-02 00:08:45.534  INFO 20704 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.project.direction.repository.DirectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-08-02 00:08:45.534  INFO 20704 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.project.pharmacy.repository.PharmacyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-08-02 00:08:45.534  INFO 20704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-08-02 00:08:45.662  INFO 20704 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsHelpersAutoConfiguration' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsHelpersAutoConfiguration$$EnhancerBySpringCGLIB$$ffa5fe15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-02 00:08:45.676  INFO 20704 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'handlebars.resolver-pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsValueResolversProperties' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsValueResolversProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-02 00:08:45.680  INFO 20704 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'handlebars-pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsProperties' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-02 00:08:45.680  INFO 20704 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsAutoConfiguration$HandlebarsViewResolverConfiguration' of type [pl.allegro.tech.boot.autoconfigure.handlebars.HandlebarsAutoConfiguration$HandlebarsViewResolverConfiguration$$EnhancerBySpringCGLIB$$128d28b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-02 00:08:45.688  INFO 20704 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'handlebarsViewResolver' of type [com.github.jknack.handlebars.springmvc.HandlebarsViewResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-02 00:08:45.803  INFO 20704 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-02 00:08:45.820  INFO 20704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-02 00:08:45.837  INFO 20704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-02 00:08:45.837  INFO 20704 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
 Hibernate: drop table if exists direction
 Hibernate: drop table if exists pharmacy
 Hibernate: create table direction (id bigint not null auto_increment, created_date datetime(6), modified_date datetime(6), distance double precision not null, input_address varchar(255), input_latitude double precision not null, input_longitude double precision not null, target_address varchar(255), target_latitude double precision not null, target_longitude double precision not null, target_pharmacy_name varchar(255), primary key (id)) engine=InnoDB
 Hibernate: create table pharmacy (id bigint not null auto_increment, created_date datetime(6), modified_date datetime(6), latitude double precision not null, longitude double precision not null, pharmacy_address varchar(255), pharmacy_name varchar(255), primary key (id)) engine=InnoDB
-2023-07-12 23:00:12.995  INFO 35556 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-07-12 23:00:12.995  INFO 35556 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-07-12 23:00:13.469  WARN 35556 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-07-12 23:00:14.389  WARN 35556 --- [    Test worker] c.g.jknack.handlebars.HelperRegistry     : Helper 'capitalize' has been replaced by 'capitalize'
-2023-07-12 23:00:14.389  WARN 35556 --- [    Test worker] c.g.jknack.handlebars.HelperRegistry     : Helper 'slugify' has been replaced by 'slugify'
-2023-07-12 23:00:14.389  WARN 35556 --- [    Test worker] c.g.jknack.handlebars.HelperRegistry     : Helper 'wordWrap' has been replaced by 'wordWrap'
-2023-07-12 23:00:14.441  INFO 35556 --- [    Test worker] c.e.p.a.s.KakaoAddressSearchServiceTest  : Started KakaoAddressSearchServiceTest in 2.554 seconds (JVM running for 27.154)
-2023-07-12 23:00:14.494  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구 종암로 10길, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%A1%9C%2010%EA%B8%B8
-서울 성북구 종암로10길2023-07-12 23:00:14.968  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 특별시 성북구 종암동, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%8F%99
-2023-07-12 23:00:15.001  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구 종암동 91, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%8F%99%2091
-2023-07-12 23:00:15.034  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 대학로, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EB%8C%80%ED%95%99%EB%A1%9C
-2023-07-12 23:00:15.072  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구 종암동 잘못된 주소, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%8F%99%20%EC%9E%98%EB%AA%BB%EB%90%9C%20%EC%A3%BC%EC%86%8C
-2023-07-12 23:00:15.099  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 광진구 구의동 251-45, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EA%B4%91%EC%A7%84%EA%B5%AC%20%EA%B5%AC%EC%9D%98%EB%8F%99%20251-45
-2023-07-12 23:00:15.127  INFO 35556 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 광진구 구의동 251-455555, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EA%B4%91%EC%A7%84%EA%B5%AC%20%EA%B5%AC%EC%9D%98%EB%8F%99%20251-455555
+2023-08-02 00:08:45.944  INFO 20704 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-02 00:08:45.944  INFO 20704 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-02 00:08:46.337  WARN 20704 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-02 00:08:46.903  WARN 20704 --- [    Test worker] c.g.jknack.handlebars.HelperRegistry     : Helper 'capitalize' has been replaced by 'capitalize'
+2023-08-02 00:08:46.903  WARN 20704 --- [    Test worker] c.g.jknack.handlebars.HelperRegistry     : Helper 'slugify' has been replaced by 'slugify'
+2023-08-02 00:08:46.903  WARN 20704 --- [    Test worker] c.g.jknack.handlebars.HelperRegistry     : Helper 'wordWrap' has been replaced by 'wordWrap'
+2023-08-02 00:08:46.933  INFO 20704 --- [    Test worker] c.e.p.a.s.KakaoAddressSearchServiceTest  : Started KakaoAddressSearchServiceTest in 1.817 seconds (JVM running for 36.787)
+2023-08-02 00:08:46.978  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구 종암로 10길, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%A1%9C%2010%EA%B8%B8
+서울 성북구 종암로10길2023-08-02 00:08:48.331  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 특별시 성북구 종암동, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%8F%99
+2023-08-02 00:08:48.373  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구 종암동 91, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%8F%99%2091
+2023-08-02 00:08:48.429  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 대학로, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EB%8C%80%ED%95%99%EB%A1%9C
+2023-08-02 00:08:48.482  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 서울 성북구 종암동 잘못된 주소, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A2%85%EC%95%94%EB%8F%99%20%EC%9E%98%EB%AA%BB%EB%90%9C%20%EC%A3%BC%EC%86%8C
+2023-08-02 00:08:48.516  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 광진구 구의동 251-45, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EA%B4%91%EC%A7%84%EA%B5%AC%20%EA%B5%AC%EC%9D%98%EB%8F%99%20251-45
+2023-08-02 00:08:48.553  INFO 20704 --- [    Test worker] c.e.p.a.service.KakaoUriBuilderService   : [KakaoUriBuilderService buildUriByAddressSearch] address: 광진구 구의동 251-455555, uri https://dapi.kakao.com/v2/local/search/address.json?query=%EA%B4%91%EC%A7%84%EA%B5%AC%20%EA%B5%AC%EC%9D%98%EB%8F%99%20251-455555
 </pre>
 </span>
 </div>
@@ -184,7 +184,7 @@ Hibernate: create table pharmacy (id bigint not null auto_increment, created_dat
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 7. 12. 오후 11:00:17</p>
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 8. 2. 오전 12:08:52</p>
 </div>
 </div>
 </body>
