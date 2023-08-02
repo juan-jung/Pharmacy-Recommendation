@@ -63,4 +63,4 @@ spring:
 pharmacy:
   recommendation:
     base:
-      url: http://localhost/dir/ #aws ec2에서 할당 받은  ip
+      url: http://3.34.156.184/dir/ #aws ec2에서 할당 받은  ip
